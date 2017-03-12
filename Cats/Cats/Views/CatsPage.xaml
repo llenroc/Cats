@@ -14,7 +14,7 @@
         <ListView x:Name="ListViewCats" ItemsSource="{Binding Cats}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ImageCell Text="{Binding Name}"                      
+                    <ImageCell Text="{Binding Name}"                       
                                Detail="{Binding Price, StringFormat='{0:c} dólares'}"                      
                                ImageSource="{Binding Image}"/>
                 </DataTemplate>

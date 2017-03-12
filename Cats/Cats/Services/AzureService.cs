@@ -9,7 +9,7 @@ namespace Cats.Services
         IMobileServiceClient Client;
         IMobileServiceTable<T> Table;
 
-        public AzureService() {
+        public AzureService() { 
             string MyAppServiceURL = "http://appcatsxamarin.azurewebsites.net";
             Client = new MobileServiceClient(MyAppServiceURL);
             Table = Client.GetTable<T>();
